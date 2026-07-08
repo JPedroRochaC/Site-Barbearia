@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="/css/login.css" />
+    <link rel="stylesheet" href="/css/style.css">
+  </head>
+  <body>
+    <header class="header-auth">
+  <img src="/img/logo1.jpg" alt="Barba & Navalha" class="logo-auth" />
+</header>
+    <main class="container">
+      <form id="form-cadastro">
+        <h1>Criar conta</h1>
+
+        <div class="input-box">
+          <input placeholder="Nome completo" type="text" id="nome" required />
+          <i class="bx bxs-user"></i>
+        </div>
+
+        <div class="input-box">
+          <input
+            placeholder="CPF"
+            type="text"
+            id="cpf"
+            maxlength="14"
+            inputmode="numeric"
+            required
+          />
+          <i class="bx bxs-id-card"></i>
+        </div>
+
+        <div class="input-box">
+          <input placeholder="E-mail" type="email" id="email" required />
+          <i class="bx bxs-envelope"></i>
+        </div>
+
+        <div class="input-box">
+          <input
+            placeholder="Senha"
+            type="password"
+            id="senha"
+            minlength="6"
+            required
+          />
+          <i class="bx bxs-lock-alt"></i>
+        </div>
+
+        <div class="input-box">
+          <input
+            placeholder="Confirmar senha"
+            type="password"
+            id="confirmar-senha"
+            minlength="6"
+            required
+          />
+          <i class="bx bxs-lock-alt"></i>
+        </div>
+
+        <p
+          id="mensagem-erro"
+          style="
+            color: #e57373;
+            font-size: 13px;
+            text-align: center;
+            min-height: 18px;
+          "
+        ></p>
+
+        <button type="submit" class="login">Cadastrar</button>
+
+        <div class="register-link">
+          <p>Já tem uma conta? <a href="login.html">Fazer login</a></p>
+        </div>
+      </form>
+    </main>
+
+    <script src="js/cadastro.js"></script>
+  </body>
+</html>

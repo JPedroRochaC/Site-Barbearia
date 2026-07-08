@@ -24,24 +24,18 @@ body {
 }
 
 /* ===== HEADER ===== */
-header {
-  background-color: var(--destaque);
+.header-auth {
+  background-color: var(--fundo);
   width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 16px 24px;
-  font-family: var(--font-bloco);
-  color: var(--detalhe);
-
+  text-align: center;
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 100;
 }
 
-.nome-topo {
-  font-size: 20px;
+.logo-auth {
+  height: 70px;
+  width: auto;
 }
 
 .agendar {

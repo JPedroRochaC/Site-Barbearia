@@ -9,13 +9,17 @@
     />
     <title>Bem vindo à Barba & Navalha</title>
     <link rel="stylesheet" href="/css/login.css" />
+    <link rel="stylesheet" href="/css/style.css">
   </head>
   <body>
+    <header class="header-auth">
+  <img src="/img/logo1.jpg" alt="Barba & Navalha" class="logo-auth" />
+</header>
     <main class="container">
       <form>
         <h1>Login</h1>
         <div class="input-box">
-          <input placeholder="Usuário" type="email" />
+          <input placeholder="CPF" type="text" id="cpf" maxlength="14" inputmode="numeric" required />
           <i class="bx bxs-user"></i>
         </div>
         <div class="input-box">
@@ -24,20 +28,19 @@
         </div>
 
         <div class="remember-forgot">
-            <label>
-            <input type="checkbox">
-                Lembrar senha
-            </label>
-            <a href="#">Esqueci a senha</a>
+            <a href="/pages/senha.html">Esqueci a senha</a>
         </div>
 
         <button type="submit" class="login">Login</button>
 
         <div class="register-link">
-            <p>Não tem uma conta? <a href="#">Cadastra-se</a></p>
+            <p>Não tem uma conta? <a href="/pages/cadastro.html">Cadastra-se</a></p>
         </div>
 
       </form>
     </main>
+
+    <script src="/js/login.js"></script>
+
   </body>
 </html>

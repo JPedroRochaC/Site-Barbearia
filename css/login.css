@@ -30,8 +30,9 @@ body {
 
 .container{
     background-color: var(--destaque);
-    width: 430px;
+    width: 400px;
     border-radius: 10px;
+    margin-top:10px;
     padding: 30px 40px;
     color: var(--fundo);
     box-shadow: 0 0 10px rgba(0, 0, 0, 20);
@@ -74,14 +75,11 @@ body {
     margin: -15px 0px 15px;
 }
 
-.remember-forgot label input {
-    margin-right: 5px;
-    accent-color: var(--fundo);
-}
-
 .remember-forgot a {
     text-decoration: none;
     color: var(--fundo);
+    padding: 10px;
+    font-weight: 600;
 }
 
 .remember-forgot a:hover{
