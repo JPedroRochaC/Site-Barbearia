@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agendar - Barba & Navalha</title>
+    <link rel="icon" type="image/png" href="/img/logo1.jpg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Cormorant+Garamond:wght@500;600&family=Kaushan+Script&family=Lora:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/agendamento.css" />
+    <link rel="stylesheet" href="/css/responsive.css" />
+  </head>
+  <body>
+    <header class="topo">
+      <a href="/index.html">
+        <img src="/img/logo1.jpg" alt="Barba & Navalha" class="logo-topo" />
+      </a>
+      <nav class="nav-topo">
+        <a href="/index.html#servicos">Serviços</a>
+        <a href="/index.html#localizacao">Localização</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <img
+        src="/img/diaAdia2.jpg"
+        alt="Interior da barbearia"
+        class="hero-img"
+      />
+      <div class="hero-overlay"></div>
+      <div class="hero-conteudo">
+        <p class="hero-script">agende seu horário</p>
+        <h1 class="hero-titulo">RESERVE SUA CADEIRA</h1>
+        <p class="hero-subtitulo">
+          Cinco passos rápidos. Escolha o serviço, o barbeiro, a data e o
+          horário.
+        </p>
+      </div>
+    </section>
+
+    <main class="agendamento-pagina container">
+      <div class="divisor">✂</div>
+      <h1 class="titulo-secao">Agende seu horário</h1>
+
+      <section class="container">
+        <!-- 1. Serviço -->
+        <div class="passo" id="servicos">
+          <div class="passo-cabecalho">
+            <span class="passo-numero">1</span>
+            <h2 class="passo-titulo">ESCOLHA O SERVIÇO</h2>
+          </div>
+
+          <button
+            type="button"
+            class="opcao"
+            data-servico="corte"
+            data-preco="35"
+          >
+            <i class="bx bx-cut opcao-icone"></i>
+            <div class="opcao-info">
+              <div class="opcao-titulo">Corte Clássico</div>
+              <div class="opcao-desc">40 min</div>
+            </div>
+            <span class="opcao-preco">R$35</span>
+          </button>
+
+          <button
+            type="button"
+            class="opcao"
+            data-servico="barba"
+            data-preco="30"
+          >
+            <i class="bx bx-shape-triangle opcao-icone"></i>
+            <div class="opcao-info">
+              <div class="opcao-titulo">Barba na Navalha</div>
+              <div class="opcao-desc">30 min</div>
+            </div>
+            <span class="opcao-preco">R$30</span>
+          </button>
+
+          <button
+            type="button"
+            class="opcao"
+            data-servico="combo"
+            data-preco="55"
+          >
+            <i class="bx bx-star opcao-icone"></i>
+            <div class="opcao-info">
+              <div class="opcao-titulo">Combo Completo</div>
+              <div class="opcao-desc">1h 10min</div>
+            </div>
+            <span class="opcao-preco">R$55</span>
+          </button>
+
+          <button
+            type="button"
+            class="opcao"
+            data-servico="trat"
+            data-preco="40"
+          >
+            <i class="bx bx-droplet opcao-icone"></i>
+            <div class="opcao-info">
+              <div class="opcao-titulo">Tratamento Capilar</div>
+              <div class="opcao-desc">45 min</div>
+            </div>
+            <span class="opcao-preco">R$40</span>
+          </button>
+        </div>
+
+        <!-- 2. Barbeiro -->
+        <div class="passo">
+          <div class="passo-cabecalho">
+            <span class="passo-numero">2</span>
+            <h2 class="passo-titulo">ESCOLHA O BARBEIRO</h2>
+          </div>
+
+          <button type="button" class="opcao" data-barbeiro="rafael">
+            <img
+              src="/img/barbeiro2.jpg"
+              alt="Rafael Souza"
+              class="avatar-foto"
+            />
+            <div class="opcao-info">
+              <div class="opcao-titulo">Rafael Souza</div>
+              <div class="opcao-desc">Mestre barbeiro · 12 anos</div>
+            </div>
+          </button>
+
+          <button type="button" class="opcao" data-barbeiro="diego">
+            <img
+              src="/img/barbeiro1.jpg"
+              alt="Diego Martins"
+              class="avatar-foto"
+            />
+            <div class="opcao-info">
+              <div class="opcao-titulo">Diego Martins</div>
+              <div class="opcao-desc">Especialista em navalha</div>
+            </div>
+          </button>
+        </div>
+
+        <!-- 3. Data -->
+        <div class="passo">
+          <div class="passo-cabecalho">
+            <span class="passo-numero">3</span>
+            <h2 class="passo-titulo">ESCOLHA A DATA</h2>
+          </div>
+          <input type="date" class="campo-data" id="data-agendamento" />
+        </div>
+
+        <!-- 4. Horário -->
+        <div class="passo">
+          <div class="passo-cabecalho">
+            <span class="passo-numero">4</span>
+            <h2 class="passo-titulo">ESCOLHA O HORÁRIO</h2>
+          </div>
+          <div class="horarios">
+            <button type="button" class="horario">09:00</button>
+            <button type="button" class="horario">09:40</button>
+            <button type="button" class="horario">10:20</button>
+            <button type="button" class="horario">11:00</button>
+            <button type="button" class="horario">11:40</button>
+            <button type="button" class="horario">13:00</button>
+            <button type="button" class="horario">13:40</button>
+            <button type="button" class="horario">14:20</button>
+            <button type="button" class="horario">15:00</button>
+            <button type="button" class="horario">15:40</button>
+            <button type="button" class="horario">16:20</button>
+            <button type="button" class="horario">17:00</button>
+          </div>
+        </div>
+
+        <!-- 5. Dados -->
+        <div class="passo">
+          <div class="passo-cabecalho">
+            <span class="passo-numero">5</span>
+            <h2 class="passo-titulo">SEUS DADOS</h2>
+          </div>
+
+          <div class="form-dados">
+            <div class="campo">
+              <label for="nome">Nome completo *</label>
+              <input
+                type="text"
+                id="nome"
+                placeholder="Como devemos te chamar"
+                required
+              />
+            </div>
+            <div class="campo">
+              <label for="tel">WhatsApp *</label>
+              <input
+                type="tel"
+                id="tel"
+                placeholder="(11) 99999-0000"
+                required
+              />
+            </div>
+            <div class="campo">
+              <label for="email">E-mail (opcional)</label>
+              <input type="email" id="email" placeholder="voce@email.com" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="divisor">✂</div>
+      <!-- Resumo + confirmar -->
+      <div class="resumo">
+        <p class="resumo-titulo">seu agendamento</p>
+        <dl>
+          <div class="resumo-linha">
+            <dt>Serviço</dt>
+            <dd id="r-servico">—</dd>
+          </div>
+          <div class="resumo-linha">
+            <dt>Barbeiro</dt>
+            <dd id="r-barbeiro">—</dd>
+          </div>
+          <div class="resumo-linha">
+            <dt>Data</dt>
+            <dd id="r-data">—</dd>
+          </div>
+          <div class="resumo-linha">
+            <dt>Horário</dt>
+            <dd id="r-horario">—</dd>
+          </div>
+        </dl>
+        <button type="button" class="btn-confirmar" id="btn-confirmar" disabled>
+          CONFIRMAR AGENDAMENTO
+        </button>
+        <p class="aviso-form">
+          Este formulário será conectado ao backend na próxima etapa.
+        </p>
+      </div>
+    </main>
+
+    <script src="/js/agendamento.js"></script>
+  </body>
+</html>

@@ -28,6 +28,21 @@ body {
      url('/img/diaAdia.jpg') no-repeat center center / cover;
 }
 
+.header-auth {
+  background-color: var(--fundo);
+  width: 100%;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+   border-bottom: 1px solid rgba(176, 141, 87, 1);
+}
+
+.logo-auth {
+  height: 70px;
+  width: auto;
+}
+
 .container{
     background-color: var(--destaque);
     width: 400px;
@@ -78,7 +93,7 @@ body {
 .remember-forgot a {
     text-decoration: none;
     color: var(--fundo);
-    padding: 10px;
+    margin-left: 8px;
     font-weight: 600;
 }
 
@@ -97,7 +112,6 @@ body {
     color: var(--destaque);
     font-weight: 600;
      box-shadow: 0 0 10px rgba(0, 0, 0, 20);
-     margin-top: 10px;
 }
 
 .login:hover{

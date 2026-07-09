@@ -1,28 +1,198 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Barba & Navalha</title>
-    <link rel="icon" type="image/png" href="img/logo.png" />
+    <link rel="icon" type="image/png" href="img/logo1.jpg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Cormorant+Garamond:wght@500;600&family=Kaushan+Script&family=Lora:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Anton&family=Cormorant+Garamond:wght@500;600&family=Kaushan+Script&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/style.css" />
   </head>
-
   <body>
-    <header>
-      <span class="nome-topo">Barba & Navalha</span>
-      <a href="#agendamento" class="agendar">Agendar</a>
+    <!-- HEADER -->
+    <header class="topo">
+      <img src="img/logo1.jpg" alt="Barba & Navalha" class="logo-topo" />
+      <nav class="nav-topo">
+        <a href="/index.html#servicos">Serviços</a>
+        <a href="/index.html#localizacao">Localização</a>
+      </nav>
+      <a href="/pages/agendamento.html" class="btn-agendar">Agendar</a>
     </header>
 
-    <div class="hero">
-      <div class="hero-img">
-        <img src="img/barbeiro1.jpg" alt="Barbeiro atendendo cliente na Barba & Navalha">
+    <!-- HERO -->
+    <section class="hero">
+      <img
+        src="img/diaAdia.jpg"
+        alt="Barbeiro atendendo cliente na Barba & Navalha"
+        class="hero-img"
+      />
+      <div class="hero-overlay"></div>
+      <div class="hero-conteudo">
+        <p class="hero-script">Barba &amp; Navalha</p>
+        <h1 class="hero-titulo">Tradição em cada corte</h1>
+        <p class="hero-subtitulo">
+          Corte, barba e cuidado completo, do jeito clássico que nunca sai de
+          moda.
+        </p>
+        <a href="/pages/agendamento.html" class="btn-agendar btn-agendar-grande"
+          >Agendar horário</a
+        >
       </div>
-    </div>
+    </section>
+
+    <div class="divisor">✂</div>
+
+    <!-- SOBRE -->
+    <section class="sobre container">
+      <h2 class="titulo-secao">Nossa história</h2>
+      <p class="sobre-texto">
+        Desde sempre, um lugar onde tradição e cuidado andam juntos. Aqui, cada
+        corte é feito com tempo, técnica e respeito ao ofício — sem pressa, sem
+        atalho, do jeito que uma boa barbearia deve ser.
+      </p>
+    </section>
+
+    <!-- SERVIÇOS -->
+    <section id="servicos" class="servicos-wrap">
+      <div class="container">
+        <h2 class="titulo-secao titulo-claro">Nossos serviços</h2>
+
+        <div class="card-servico">
+          <i class="bx bx-cut card-icone"></i>
+          <div class="card-info">
+            <h3>Corte Clássico</h3>
+            <p>Tesoura ou máquina, no estilo tradicional</p>
+          </div>
+          <span class="preco">R$35</span>
+        </div>
+
+        <div class="card-servico">
+          <i class="bx bxs-magic-wand card-icone"></i>
+          <div class="card-info">
+            <h3>Barba na Navalha</h3>
+            <p>Modelagem completa com toalha quente</p>
+          </div>
+          <span class="preco">R$30</span>
+        </div>
+
+        <div class="card-servico card-destaque">
+          <i class="bx bxs-star card-icone"></i>
+          <div class="card-info">
+            <h3>Combo Completo</h3>
+            <p>Corte + barba, a experiência completa</p>
+          </div>
+          <span class="preco preco-destaque">R$55</span>
+        </div>
+
+        <div class="card-servico">
+          <i class="bx bx-water card-icone"></i>
+          <div class="card-info">
+            <h3>Tratamento Capilar</h3>
+            <p>Hidratação e cuidado do couro cabeludo</p>
+          </div>
+          <span class="preco">R$40</span>
+        </div>
+      </div>
+    </section>
+
+    <div class="divisor">✂</div>
+
+    <!-- LOCALIZAÇÃO -->
+    <section id="localizacao" class="localizacao-wrap">
+      <div class="container">
+        <h2 class="titulo-secao titulo-claro">Onde estamos</h2>
+
+        <div class="card-info-bloco">
+          <i class="bx bx-time-five"></i>
+          <div>
+            <h3>Horário de funcionamento</h3>
+            <p>Terça a Sábado: 9h às 19h</p>
+            <p>Domingo e Segunda: fechado</p>
+          </div>
+        </div>
+
+        <div class="mapa-wrap">
+          <iframe
+            src="https://www.google.com/maps?q=Rua+das+Tesouras,45+Centro+Fortaleza&output=embed"
+            width="100%"
+            height="220"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+          >
+          </iframe>
+        </div>
+
+        <a
+          href="https://maps.google.com/?q=Rua+das+Tesouras,45+Centro+Fortaleza"
+          target="_blank"
+          rel="noopener"
+          class="link-endereco"
+        >
+          <i class="bx bxs-map"></i> Rua das Tesouras, 45 — Centro, Fortaleza/CE
+        </a>
+      </div>
+    </section>
+
+    <!-- CTA FINAL -->
+    <section class="cta-final container">
+      <h2>Pronto pra renovar o visual?</h2>
+      <a href="/pages/agendamento.html" class="btn-agendar btn-agendar-grande"
+        >Agendar horário</a
+      >
+    </section>
+
+    <!-- RODAPÉ -->
+    <footer class="rodape">
+      <p>&copy; 2026 Barba & Navalha</p>
+      <div class="rodape-social">
+        <a
+          href="https://instagram.com/SEUUSUARIO"
+          target="_blank"
+          rel="noopener"
+        >
+          <i class="bx bxl-instagram"></i>
+        </a>
+        <a href="https://wa.me/55SEUNUMERO" target="_blank" rel="noopener">
+          <i class="bx bxl-whatsapp"></i>
+        </a>
+      </div>
+      <p class="footer-copy" style="margin-top: 6px">
+        Desenvolvido por
+        <a
+          href="https://instagram.com/pedrocha.dev"
+          target="_blank"
+          style="
+            color: var(--color-light);
+            text-decoration: none;
+            font-weight: 500;
+          "
+          >@pedrocha.dev</a
+        >
+      </p>
+    </footer>
+    <a
+      href="https://wa.me/55SEUNUMERO?text=Olá! Gostaria de agendar um horário na Barba %26 Navalha."
+      target="_blank"
+      rel="noopener"
+      class="whatsapp-flutuante"
+      aria-label="Fale conosco no WhatsApp"
+    >
+      <i class="bx bxl-whatsapp"></i>
+    </a>
+
+    <script src="js/script.js"></script>
   </body>
 </html>

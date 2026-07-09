@@ -1,0 +1,297 @@
+/* ===== ESTRUTURA GERAL DOS PASSOS ===== */
+.passo {
+  padding: 32px 20px 8px;
+}
+
+.passo-cabecalho {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.passo-numero {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: var(--detalhe);
+  color: var(--destaque);
+  font-family: var(--font-bloco);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  flex-shrink: 0;
+}
+
+.passo-titulo {
+  font-family: var(--font-bloco);
+  font-size: 20px;
+  letter-spacing: 1px;
+  color: var(--destaque);
+}
+
+/* ===== CARDS SELECIONÁVEIS (serviço / barbeiro) ===== */
+.opcao {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background-color: transparent;
+  border: 1px solid var(--detalhe);
+  border-radius: 12px;
+  padding: 14px 18px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  text-align: left;
+  font-family: var(--font-corpo);
+  color: var(--destaque);
+  transition: background-color .2s ease, border-color .2s ease;
+}
+
+.opcao:hover {
+  background-color: rgba(176, 141, 87, 0.1);
+}
+
+.opcao.selecionada {
+  background-color: var(--destaque);
+  color: var(--fundo);
+  border-color: var(--destaque);
+}
+
+.opcao.selecionada .opcao-desc,
+.opcao.selecionada .opcao-icone {
+  color: var(--detalhe-claro);
+}
+
+.opcao-icone {
+  font-size: 22px;
+  color: var(--detalhe);
+  flex-shrink: 0;
+}
+
+.opcao-info {
+  flex: 1;
+}
+
+.opcao-titulo {
+  font-weight: 600;
+  font-size: 15px;
+  margin-bottom: 2px;
+}
+
+.opcao-desc {
+  font-size: 12px;
+  color: var(--destaque);
+  opacity: 0.7;
+}
+
+.opcao-preco {
+  background-color: var(--detalhe);
+  color: var(--destaque);
+  font-weight: 700;
+  font-size: 14px;
+  padding: 6px 14px;
+  border-radius: 20px;
+  white-space: nowrap;
+}
+
+.opcao.selecionada .opcao-preco {
+  background-color: var(--detalhe);
+  color: var(--destaque);
+}
+
+/* Avatar do barbeiro (versão inicial/texto) */
+.avatar {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  border: 1px solid var(--detalhe);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-bloco);
+  color: var(--detalhe);
+  font-size: 15px;
+  flex-shrink: 0;
+}
+
+.opcao.selecionada .avatar {
+  color: var(--detalhe-claro);
+}
+
+/* Avatar do barbeiro (versão com foto real) */
+.avatar-foto {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--detalhe);
+  flex-shrink: 0;
+  transition: border-color .2s ease;
+}
+
+.opcao.selecionada .avatar-foto {
+  border-color: var(--detalhe-claro);
+  box-shadow: 0 0 0 2px var(--destaque);
+}
+
+/* ===== CALENDÁRIO NATIVO ===== */
+.campo-data {
+  width: 100%;
+  padding: 14px 18px;
+  border: 1px solid var(--detalhe);
+  border-radius: 12px;
+  background-color: transparent;
+  font-family: var(--font-corpo);
+  font-size: 15px;
+  color: var(--destaque);
+}
+
+/* ===== GRADE DE HORÁRIOS ===== */
+.horarios {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.horario {
+  padding: 10px 6px;
+  border: 1px solid var(--detalhe);
+  background-color: transparent;
+  border-radius: 8px;
+  font-family: var(--font-corpo);
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--destaque);
+  cursor: pointer;
+  transition: all .2s ease;
+}
+
+.horario:hover {
+  background-color: rgba(176, 141, 87, 0.1);
+}
+
+.horario.selecionado {
+  background-color: var(--detalhe);
+  color: var(--destaque);
+  border-color: var(--detalhe);
+}
+
+/* ===== FORMULÁRIO DE DADOS DO CLIENTE ===== */
+.form-dados {
+  border: 1px solid var(--detalhe);
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.campo label {
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--detalhe);
+  font-weight: 600;
+}
+
+.campo input {
+  padding: 12px 14px;
+  border: 1px solid var(--detalhe);
+  border-radius: 8px;
+  background-color: transparent;
+  font-family: var(--font-corpo);
+  font-size: 15px;
+  color: var(--destaque);
+  outline: none;
+  transition: border-color .2s ease;
+}
+
+.campo input:focus {
+  border-color: var(--destaque);
+}
+
+/* ===== RESUMO FINAL ===== */
+.resumo {
+  margin: 30px 20px;
+  background-color: var(--destaque);
+  color: var(--fundo);
+  border: 1px solid var(--detalhe);
+  border-radius: 12px;
+  padding: 24px 20px;
+}
+
+.resumo-titulo {
+  font-family: var(--font-script);
+  color: var(--detalhe-claro);
+  font-size: 22px;
+  text-align: center;
+  margin-bottom: 14px;
+}
+
+.resumo dl {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 22px;
+}
+
+.resumo-linha {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  border-bottom: 1px solid rgba(176, 141, 87, 0.3);
+  padding-bottom: 8px;
+  font-size: 14px;
+}
+
+.resumo-linha dt {
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-size: 11px;
+  color: var(--detalhe-claro);
+}
+
+.resumo-linha dd {
+  text-align: right;
+  font-weight: 500;
+}
+
+/* ===== BOTÃO CONFIRMAR ===== */
+.btn-confirmar {
+  width: 100%;
+  padding: 16px;
+  background-color: var(--detalhe);
+  color: var(--destaque);
+  border: none;
+  border-radius: 30px;
+  font-family: var(--font-bloco);
+  font-size: 16px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: background-color .2s ease;
+}
+
+.btn-confirmar:hover:not(:disabled) {
+  background-color: var(--detalhe-claro);
+}
+
+.btn-confirmar:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.aviso-form {
+  text-align: center;
+  font-size: 11px;
+  color: var(--detalhe-claro);
+  margin-top: 10px;
+  opacity: 0.8;
+}

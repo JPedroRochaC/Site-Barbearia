@@ -1,0 +1,42 @@
+/* ===== RESPONSIVIDADE (telas maiores que celular) ===== */
+@media (min-width: 768px) {
+  .hero-titulo {
+    font-size: 44px;
+  }
+
+  .hero-subtitulo {
+    font-size: 18px;
+    max-width: 460px;
+  }
+
+  .card-servico {
+    padding: 20px 26px;
+  }
+
+  .topo {
+    padding: 12px 18px;
+  }
+
+  .nav-topo {
+    gap: 18px;
+  }
+
+  .nav-topo a {
+    font-size: 14px;
+  }
+
+  .btn-agendar {
+    padding: 8px 16px;
+    font-size: 13px;
+  }
+
+  .logo-topo {
+    height: 40px;
+  }
+}
+
+@media (min-width: 480px) {
+  .horarios {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

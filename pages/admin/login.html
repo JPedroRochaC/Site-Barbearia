@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <title>Login administrativo - Barba & Navalha</title>
+    <link rel="icon" type="image/png" href="/img/logo1.jpg" />
+    <link rel="stylesheet" href="/css/login.css" />
+  </head>
+  <body>
+    <header class="header-auth">
+      <img src="/img/logo1.jpg" alt="Barba & Navalha" class="logo-auth" />
+    </header>
+
+    <main class="container">
+      <form id="form-login">
+        <h1>LOGIN ADMINISTRATIVO</h1>
+
+        <div class="input-box">
+          <input placeholder="E-mail" type="email" id="email" required />
+          <i class="bx bxs-envelope"></i>
+        </div>
+
+        <div class="input-box">
+          <input placeholder="Senha" type="password" id="senha" required />
+          <i class="bx bxs-lock-alt"></i>
+        </div>
+
+        <div class="remember-forgot">
+          <a href="senha.html">Esqueci a senha</a>
+        </div>
+
+        <p id="mensagem-erro" style="color:#e57373; font-size:13px; text-align:center; min-height:18px;"></p>
+
+        <button type="submit" class="login">Login</button>
+      </form>
+    </main>
+
+    <script src="/js/admin/login.js"></script>
+  </body>
+</html>
